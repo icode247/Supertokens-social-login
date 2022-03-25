@@ -61,7 +61,7 @@ const app = express();
 // ...other middlewares
 app.use(
   cors({
-    origin: 'https://frontend-icode247.vercel.app',
+    origin: ['https://frontend-icode247.vercel.app','https://backend-icode247.vercel.app'],
     allowedHeaders: ['content-type', ...SuperTokens.getAllCORSHeaders()],
     credentials: true,
   })
